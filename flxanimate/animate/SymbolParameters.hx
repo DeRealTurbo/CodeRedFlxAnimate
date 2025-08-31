@@ -212,7 +212,7 @@ class SymbolParameters implements IFilterable
 		if (type == null) return this.loop = null;
 		this.loop = switch (type)
 		{
-			case MovieClip: Loop;
+			case MovieClip: SingleFrame; // Fix, Because Zirex exists
 			case Button: SingleFrame;
 			default: loop;
 		}
